@@ -12,7 +12,10 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-  // ваш код...
+  if ( name === null || name === '' || name.length < 4 || name.includes(' ') ) {
+    return false;
+  }
+  return true;
 }
 
 function sayHello() {
