@@ -12,10 +12,13 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-  if ( name === null || name === '' || name.length < 4 || name.includes(' ') ) {
-    return false;
-  }
-  return true;
+  return  name === null || name === '' || name.length < 4 || name.includes(' ') ? false : true;
+
+  // INFO: Я конечно попробовал в одну строку, но как по мне этот вариант читабельней.
+  // if ( name === null || name === '' || name.length < 4 || name.includes(' ') ) {
+  //   return false;
+  // }
+  // return true;
 }
 
 function sayHello() {
