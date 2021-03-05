@@ -11,7 +11,7 @@ function initCarousel() {
   let currentSlideNumber = 0;
   let position = 0;
 
-  let clickBtn = () => {
+  let clickBtn = (event) => {
     let btn = event.target.closest(carouselArrow);
 
     if (!btn || !carousel.contains(btn)) {return;}
@@ -45,8 +45,8 @@ function initCarousel() {
   };
 
   // Events
-  carousel.addEventListener('click', () => {
-    clickBtn();
+  carousel.addEventListener('click', (event) => {
+    clickBtn(event);
   });
   checkBtnSatus();
 }
