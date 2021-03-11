@@ -69,6 +69,8 @@
 }
 
 .ribbon__item {
+  display: inline-flex;
+  align-items: center;
   color: var(--color-body);
   background: var(--color-black-dark);
   padding: 13px 38px;
