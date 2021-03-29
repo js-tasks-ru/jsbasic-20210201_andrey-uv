@@ -25,7 +25,7 @@ describe('8-module-3-task', () => {
         "id": "som-tam-papaya-salad",
         "spiciness": 0
       }
-    ];
+    ]
 
     cartIcon = jasmine.createSpyObj('cartIcon', ['update']);
 
@@ -94,7 +94,7 @@ describe('8-module-3-task', () => {
 
         expect(cart.isEmpty()).toBe(true);
       });
-    });
+    })
   });
 
   describe('если добавлены разные товары', () => {
