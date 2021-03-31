@@ -193,8 +193,6 @@ export default class Cart {
           <img src="/assets/images/delivery.gif">
         </p>
       </div>`;
-
-      await response.json();
     }
   }
 
